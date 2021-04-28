@@ -6,8 +6,9 @@ const fetch = require("node-fetch")
 app.use(express.static(join(__dirname, "/")));
 
 app.listen(443, () => {
-  console.log("Online");
-});
+  console.log(`online`)
+})
+
 app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "index.html"));
 });
