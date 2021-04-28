@@ -5,7 +5,7 @@ const fetch = require("node-fetch")
 
 app.use(express.static(join(__dirname, "/")));
 
-app.listen(80, () => {
+app.listen(443, () => {
   console.log("Online");
 });
 app.get("/", (req, res) => {
